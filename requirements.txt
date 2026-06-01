@@ -6,3 +6,4 @@ numpy
 av
 Pillow
 requests
+opencv-python-headless
