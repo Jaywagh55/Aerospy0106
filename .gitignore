@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.vscode/
+.idea/
+.ipynb_checkpoints/
+yolov8n.pt
+*.pt
+/.git/
+/.pytest_cache/
+.mypy_cache/
+.cache/
+.streamlit/secrets.toml
