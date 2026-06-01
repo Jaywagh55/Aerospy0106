@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  aerospy:
+    build: .
+    image: aerospy:latest
+    restart: unless-stopped
+    ports:
+      - '8501:8501'
+    environment:
+      - PORT=8501
+    volumes:
+      - ./:/app:ro
+    # To enable GPU support (if host has NVIDIA and nvidia-docker installed),
+    # uncomment the following and run with docker-compose v2 or docker run --gpus
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - capabilities: [gpu]
